@@ -11,14 +11,14 @@ const Index = () => {
         {/* LOGO */}
         <Image
           style={styles.image}
-          source={"/assets/images/icon.png"}
+          source={require("@/assets/images/icon.png")}
           contentFit="cover"
         />
         {/* SENTENCE */}
         <Text style={styles.text}>You have 392 photos to clean up!</Text>
         {/* START FROM END? */}
         <View style={styles.container}>
-          <GetStarted label="get started"></GetStarted>
+          <GetStarted label="get started" />
         </View>
       </View>
     </>
@@ -31,25 +31,22 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#25222e",
-    // backgroundColor: "#25292e",
-
     justifyContent: "center",
     alignItems: "center",
   },
   image: {
-    width: "50%",
-    borderWidth: "1px",
-    height: "200px",
-    width: "300px",
-    borderBlockColor: "white",
+    borderWidth: 1,
+    height: 200,
+    width: 300,
+    borderColor: "white",
   },
   text: {
     color: "#fff",
   },
   title: {
-    fontSize: "20px",
+    fontSize: 20,
     color: "#fff",
     fontWeight: "bold",
-    padding: "5px",
+    padding: 5,
   },
 });

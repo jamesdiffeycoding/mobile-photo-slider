@@ -1,4 +1,4 @@
-import { View, StyleSheet, /* @tutinfo */ Platform } from "react-native";
+import { View, StyleSheet } from "react-native";
 import * as ImagePicker from "expo-image-picker";
 import { useState, useRef } from "react";
 import * as MediaLibrary from "expo-media-library";
@@ -47,12 +47,12 @@ export default function Sort() {
             imgSource={PlaceholderImage}
             selectedImage={selectedImage}
             middlePhoto={false}
-          />{" "}
+          />
           <ThumbnailImageViewer
             imgSource={PlaceholderImage}
             selectedImage={selectedImage}
             middlePhoto={true}
-          />{" "}
+          />
           <ThumbnailImageViewer
             imgSource={PlaceholderImage}
             selectedImage={selectedImage}

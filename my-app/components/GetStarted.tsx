@@ -16,7 +16,7 @@ export default function StartEndButton({ label, onPress }: Props) {
     >
       <Link href="/sort">
         <AntDesign name="swap" size={24} color="#fff" />{" "}
-        <Text style={[styles.buttonLabel, { color: "#fff" }]}>{label}</Text>
+        <Text style={[styles.buttonLabel]}>{label}</Text>
       </Link>
     </View>
   );

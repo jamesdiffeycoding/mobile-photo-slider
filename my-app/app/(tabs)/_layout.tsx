@@ -44,6 +44,32 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="experiment"
+        options={{
+          title: "experiment",
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons
+              name={focused ? "umbrella" : "umbrella-outline"}
+              color={color}
+              size={24}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="swipe"
+        options={{
+          title: "swipe",
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons
+              name={focused ? "aperture" : "aperture-outline"}
+              color={color}
+              size={24}
+            />
+          ),
+        }}  
+      />
     </Tabs>
   );
 }
